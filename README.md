@@ -36,6 +36,7 @@ The commandline options are:
       Equivalent to `echo CMDLINE | iconv -t ucs2 | efibootmgr -c -b NUM -d DISK -p PART -l LOADER -L LABEL -@ -`
   * `-O|--boot-order NUM[,NUM[,NUM...]]`: Sets boot order. May be specified alone or together the `-W` switch.
       Equivalent to `bootmgr -o NUM[,NUM[,NUM...]]`
+  * `-C|--config=FILE`: load and the specified file. Allowed keys are specified in the table below.
 * Write options:
   * `-d|--disk=STRING`: Select disk the bootloader is on. Default is `/dev/sda`.
   * `-p|--part=NUM`: Select the EFI partition number. Default is `1`.
@@ -61,6 +62,7 @@ The commandline options are:
 |`-c|--cmdline=STRING` | `BootEntry` | `Cmdline = STRING` |
 |`-e|--preserve-existring` | *NONE* | *NONE* |
 |`-o|--preserve-order` | `General` | `Order = Preserve` |
+|`-C|--config` | `General` | `Include = FILE` |
 | *NONE* | `General` | `Efibootmgr = PATH/TO/EFIBOOTMGR/BINARY` |
 | *NONE* | `General` | `EfivarsPath = PATH/TO/EFIVARS/DIR` |
 | *NONE* | `General` | `BootUid = BOOTENTRY-UID` |
