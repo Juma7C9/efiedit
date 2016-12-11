@@ -12,7 +12,7 @@ This program should run on any GNU/Linux system, and maybe on other Unices (need
 
 ## Contents
 * Source files:
-  * main.{c,h}, read_settings.c, write_settings.c: main program source files;
+  * main.{c,h}, efiedit.h, read_settings.c, write_settings.c: main program source files;
   * ini.{c,h}: [config file parser, by Ben Hoyt](https://github.com/benhoyt/inih);
   * Makefile;
  * example.conf: an overview of various configuration options;
