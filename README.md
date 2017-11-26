@@ -60,7 +60,7 @@ The commandline options are:
 |`-l\|--loader=STRING` | `BootEntry` | `Loader = STRING` |
 |`-L\|--label=STRING` | `Bootentry` | `Label = STRING` |
 |`-c\|--cmdline=STRING` | `BootEntry` | `Cmdline = STRING` |
-|`-e\|--preserve-existring` | *NONE* | *NONE* |
+|`-e\|--preserve-existing` | *NONE* | *NONE* |
 |`-o\|--preserve-order` | `General` | `Order = Preserve` |
 |`-C\|--config` | `General` | `Include = FILE` |
 | *NONE* | `General` | `Efibootmgr = PATH/TO/EFIBOOTMGR/BINARY` |
