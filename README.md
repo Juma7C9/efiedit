@@ -44,25 +44,25 @@ The commandline options are:
   * `-L|--label=STRING`: Set bootentry label name. Default `Grub2 loader`.
   * `-c|--cmdline=STRING`: Pass `STRING` as additional data, to be passed to the bootloader.
       If the loader is the Linux kernel itself used as EFIStub, this data becomes its commandline.
-  * `-e|--preserve-existring`: If the selected bootentry altready exist, exit and do not overwrite it.
+  * `-e|--preserve-existing`: If the selected bootentry altready exist, exit and do not overwrite it.
   * `-o|--preserve-order`: By default, if no explicit bootorder is specified `efibootmgr` sets the newly
       added entry as the first one. Pass this switch to restore the previous order.
 
 ## Options overview
 |Commanline switch|Config file section|Config file key|
 |-------|--------|---------|
-|`-S|--show`| *NONE* | *NONE* |
-|`-R|--read[=NUM]`| *NONE* | *NONE* |
-|`-W|--write[=NUM]`| *NONE* | *NONE* |
-|`-O|--boot-order NUM[,NUM[,NUM...]]` | `General` | `BootOrder = NUM[,NUM[,NUM...]]`|
-|`-d|--disk=STRING` | `BootEntry` | `Disk = STRING` |
-|`-p|--part=NUM` | `BootEntry` | `Partition = NUM` |
-|`-l|--loader=STRING` | `BootEntry` | `Loader = STRING` |
-|`-L|--label=STRING` | `Bootentry` | `Label = STRING` |
-|`-c|--cmdline=STRING` | `BootEntry` | `Cmdline = STRING` |
-|`-e|--preserve-existring` | *NONE* | *NONE* |
-|`-o|--preserve-order` | `General` | `Order = Preserve` |
-|`-C|--config` | `General` | `Include = FILE` |
+|`-S\|--show`| *NONE* | *NONE* |
+|`-R\|--read[=NUM]`| *NONE* | *NONE* |
+|`-W\|--write[=NUM]`| *NONE* | *NONE* |
+|`-O\|--boot-order NUM[,NUM[,NUM...]]` | `General` | `BootOrder = NUM[,NUM[,NUM...]]`|
+|`-d\|--disk=STRING` | `BootEntry` | `Disk = STRING` |
+|`-p\|--part=NUM` | `BootEntry` | `Partition = NUM` |
+|`-l\|--loader=STRING` | `BootEntry` | `Loader = STRING` |
+|`-L\|--label=STRING` | `Bootentry` | `Label = STRING` |
+|`-c\|--cmdline=STRING` | `BootEntry` | `Cmdline = STRING` |
+|`-e\|--preserve-existring` | *NONE* | *NONE* |
+|`-o\|--preserve-order` | `General` | `Order = Preserve` |
+|`-C\|--config` | `General` | `Include = FILE` |
 | *NONE* | `General` | `Efibootmgr = PATH/TO/EFIBOOTMGR/BINARY` |
 | *NONE* | `General` | `EfivarsPath = PATH/TO/EFIVARS/DIR` |
 | *NONE* | `General` | `BootUid = BOOTENTRY-UID` |
