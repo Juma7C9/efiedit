@@ -3,7 +3,7 @@
 
 CC=gcc
 #CFLAGS=-g -Wall
-CFLAGS=-Wall
+CFLAGS=-Wall -fcommon
 
 objects=main.o read_settings.o write_settings.o ini.o
 headers=efiedit.h ini.h

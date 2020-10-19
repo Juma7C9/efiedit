@@ -1,6 +1,6 @@
 /*
  * This file is part of Efiedit.
- * Copyright (c) 2016 Juri Vitali <juri@dividebyzero.it>
+ * Copyright (c) 2016, 2020 Juri Vitali <juri@dividebyzero.it>
  * 
  * Efiedit is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
  */
 
 /* ----------------------- Argp data structures ---------------------- */
-const char* argp_program_version = "Efiedit 1.0";
+const char* argp_program_version = "Efiedit 1.0.1";
 static char doc[] ="Program to read and write EFI boot entries, "
 					"using efibootmgr and efivars FS\v"
 					"Options are aquired in the order they are parsed, by the program, so "
